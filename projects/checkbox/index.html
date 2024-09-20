@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товары</title>
+
+    <style>
+        .order-list label:not(:last-child)::after {
+            display: block;
+            margin-bottom: 8px;
+            content: "";
+        }
+
+        button {
+            margin-block: 16px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <p>Выберите товары:</p>
+    <div class="order-list">
+        <input type="checkbox" id="apple_checkbox" value="120" />
+        <label for="apple_checkbox">Пирог с яблоком - 120р</label>
+        <input type="checkbox" id="chocolate_checkbox" value="80" />
+        <label for="chocolate_checkbox">Шоколадный кекс - 80р</label>
+        <input type="checkbox" id="cheese_checkbox" value="180" />
+        <label for="cheese_checkbox">Чискейк - 180р</label>
+    </div>
+    <button onclick="selectOrder()">Выбрать</button>
+    <div id="result_cost"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
