@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма</title>
+
+    <style>
+        .form-option {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 300px;
+        }
+
+        .form-option input {
+            width: 200px;
+            padding: 7px 6px;
+        }
+
+        .form-option:not(:last-child) {
+            margin-bottom: 8px;
+        }
+
+        button {
+            margin-block: 16px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="form-option">
+            <label for="first_name">Имя:</label>
+            <input type="text" id="first_name" />
+        </div>
+        <div class="form-option">
+            <label for="last_name">Фамилия:</label>
+            <input type="text" id="last_name" />
+        </div>
+    </div>
+    <button onclick="printGreeting()">Отправить</button>
+    <div id="greeting"></div>
+    <script src="index.js"></script>
+</body>
+
+</html>
